@@ -517,13 +517,13 @@ namespace imgui_beef
 		[LinkName("igInputFloat4")]
 		public static extern bool InputFloat4(char8* label, float[4] v, char8* format = "%.3f", InputTextFlags flags = 0);
 		[LinkName("igInputInt")]
-		public static extern bool InputInt(char8* label, int* v, int32 step = 1, int32 step_fast = 100, InputTextFlags flags = 0);
+		public static extern bool InputInt(char8* label, int32* v, int32 step = 1, int32 step_fast = 100, InputTextFlags flags = 0);
 		[LinkName("igInputInt2")]
-		public static extern bool InputInt2(char8* label, int[2] v, InputTextFlags flags = 0);
+		public static extern bool InputInt2(char8* label, int32[2] v, InputTextFlags flags = 0);
 		[LinkName("igInputInt3")]
-		public static extern bool InputInt3(char8* label, int[3] v, InputTextFlags flags = 0);
+		public static extern bool InputInt3(char8* label, int32[3] v, InputTextFlags flags = 0);
 		[LinkName("igInputInt4")]
-		public static extern bool InputInt4(char8* label, int[4] v, InputTextFlags flags = 0);
+		public static extern bool InputInt4(char8* label, int32[4] v, InputTextFlags flags = 0);
 		[LinkName("igInputDouble")]
 		public static extern bool InputDouble(char8* label, double* v, double step = 0.0, double step_fast = 0.0, char8* format = "%.6f", InputTextFlags flags = 0);
 		[LinkName("igInputScalar")]
