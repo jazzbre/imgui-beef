@@ -2,7 +2,7 @@ using System;
 
 namespace imgui_beef
 {
-	static extension ImGui
+	extension ImGui
 	{
 		// A primary data type
 		public enum DataType : int32

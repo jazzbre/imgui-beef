@@ -2,7 +2,7 @@ using System;
 
 namespace imgui_beef
 {
-	static extension ImGui
+	extension ImGui
 	{
 		// Flags for ImGui::Begin()
 		public enum WindowFlags : int32

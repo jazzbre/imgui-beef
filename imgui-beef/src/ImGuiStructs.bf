@@ -2,7 +2,7 @@ using System;
 
 namespace imgui_beef
 {
-	static extension ImGui
+	extension ImGui
 	{
 		// TODO convert all these forward declarations to actual structs
 		//public struct DrawChannel; // Temporary storage to output draw commands out of order, used by DrawListSplitter and DrawList::ChannelsSplit()
