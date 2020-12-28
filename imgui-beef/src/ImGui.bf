@@ -428,11 +428,11 @@ namespace imgui_beef
 		[LinkName("igEndCombo")]
 		public static extern void EndCombo(); // only call EndCombo() if BeginCombo() returns true!
 		[LinkName("igComboStr_arr")]
-		public static extern bool Combo(char8* label, int* current_item, char8*[] items, int32 items_count, int32 popup_max_height_in_items = -1);
+		public static extern bool Combo(char8* label, int32* current_item, char8** items, int32 items_count, int32 popup_max_height_in_items = -1);
 		[LinkName("igComboStr")]
-		public static extern bool Combo(char8* label, int* current_item, char8* items_separated_by_zeros, int32 popup_max_height_in_items = -1); // Separate items with \0 within a string, end item-list with \0\0. e.g. "One\0Two\0Three\0"
+		public static extern bool Combo(char8* label, int32* current_item, char8* items_separated_by_zeros, int32 popup_max_height_in_items = -1); // Separate items with \0 within a string, end item-list with \0\0. e.g. "One\0Two\0Three\0"
 		[LinkName("igComboFnPtr")]
-		public static extern bool Combo(char8* label, int* current_item, function bool(void* data, int32 idx, char8** out_text) items_getter, void* data, int32 items_count, int32 popup_max_height_in_items = -1);
+		public static extern bool Combo(char8* label, int32* current_item, function bool(void* data, int32 idx, char8** out_text) items_getter, void* data, int32 items_count, int32 popup_max_height_in_items = -1);
 
 		// Widgets: Drags
 		// - CTRL+Click on any drag box to turn them into an input box. Manually input values aren't clamped and can go off-bounds.
